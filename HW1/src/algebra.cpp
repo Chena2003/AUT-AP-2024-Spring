@@ -53,7 +53,7 @@ namespace algebra {
         for (const auto& row : matrix) {
             std::string fmt = "|";
             for (const auto& elem : row) {
-                fmt += std::format("{^7}|", elem);
+                fmt += std::format("{:<7}|", elem);
             }
             std::cout << fmt << std::endl;
         }
